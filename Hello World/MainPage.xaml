@@ -8,8 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="#FF6EDFD4">
-        <Button Content="My Profile" Margin="300,672,0,0" VerticalAlignment="Top" Height="77" Width="204" Click="Button_Click" FontSize="36">
+    <Grid Background="#ffffff">
+        <Button Content="My Profile" Margin="300,696,0,0" VerticalAlignment="Top" Height="77" Width="204" Click="Button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -17,7 +17,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="My Profile" Margin="1021,672,0,0" VerticalAlignment="Top" Height="77" Width="204" Click="Button_Click" FontSize="36">
+        <Button Content="My Profile" Margin="1437,696,0,0" VerticalAlignment="Top" Height="77" Width="204" Click="Button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -25,6 +25,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="802,380,0,0" Text="Hello World" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Height="66" Width="255" SelectionChanged="TextBlock_SelectionChanged" Foreground="Black" FontFamily="Sylfaen"/>
 
     </Grid>
 </Page>

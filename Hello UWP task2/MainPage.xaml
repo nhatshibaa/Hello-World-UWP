@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="Hello_UWP_task2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hello_UWP_task2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Name="LayoutGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
+        <Button Name="ClickMe" Content="Click Me" Margin="761,134,0,0" VerticalAlignment="Top" FontSize="36" Click="ClickMe_Click" FocusVisualPrimaryBrush="#FFCE2121" Foreground="White"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Text="Hello " TextWrapping="Wrap" VerticalAlignment="Center" FocusVisualPrimaryBrush="Black" FontSize="72" Foreground="Black"/>
+    </Grid>
+</Page>

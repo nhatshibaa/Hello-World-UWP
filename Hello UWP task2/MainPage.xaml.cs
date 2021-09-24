@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace Hello_World
+namespace Hello_UWP_task2
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -27,18 +27,30 @@ namespace Hello_World
             this.InitializeComponent();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MediaElement mediaElement = new MediaElement();
-            var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
-            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Hello, My name is Nguyen Tien Nhat");
-            mediaElement.SetSource(stream, stream.ContentType);
-            mediaElement.Play();
+
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        private void ClickMe_Click(object sender, RoutedEventArgs e)
         {
+            textBlock.Text = "Suprise";
+        }
 
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            Button myButton = new Button();
+            myButton.Name = "Click<Me>";
+            myButton.Content = "Click Me Pls";
+            myButton.Width = 200;
+            myButton.Height = 100;
+            myButton.HorizontalAlignment = HorizontalAlignment.Left;
+            myButton.VerticalAlignment = VerticalAlignment.Top;
+
+            myButton.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+            myButton.Click += ClickMe_Click;
+
+            LayoutGrid.Children.Add(myButton);
         }
     }
 }
